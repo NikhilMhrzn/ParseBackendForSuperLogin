@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Parse Server</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+    ​
+
+    <head>
+        <title>Super Login</title>
+        ​
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style type="text/css">
+            body {
+                background-color: #F8F8FF;
+            }
+            
+            .main {
+                border: 1px solid #ccc;
+                border-radius: 29px;
+                height: 50vh;
+                box-shadow: 0px 1px 9px 0px;
+                height: 450px;
+                margin: auto;
+                width: 75%;
+                background: #fff
+            }
+            
+            .form_title {
+                margin-top: 20px;
+                margin-left: 1.75%;
+            }
+            
+            .form_title img {
+                margin-left: 20px;
+                height: 32px;
+            }
+            
+            .form_title p {
+                color: #000000;
+                font-weight: bold;
+                font-size: 23px
+            }
+            
+            p {
+                color: #09C6F9;
+            }
+            
+            .form_div {
+                margin-top: 75px;
+            }
+            
+            .test {
+                margin-top: 10%;
+            }
+            
+            form {
+                margin: 10%;
+            }
+            
+            .email_field {
+                margin-bottom: 15px;
+            }
+            
+            .btn {
+                float: right;
+                padding: 15px;
+                border-radius: 25px;
+                width: 93px;
+                border: 0;
+                background-color: #045de9;
+                background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+            }
+            
+            .fa-envelope-o {
+                color: #045de9 !important;
+                font-size: 15px;
+            }
+            
+            .fa-lock {
+                color: #045de9 !important;
+                font-size: 21px;
+            }
+            
+            .g-recaptcha {
+                margin-top: 15px;
+                transform: scale(1.1);
+                transform-origin: 0 0;
+            }
+            
+            .form-control-feedback {
+                margin-right: 10px;
+            }
+        </style>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        ​
+
+        <body>
+            ​ ​
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 test">
+                        <div class="main">
+
+                            <div class="form_title">
+                                <div class="col-md-2 col-sm-2">
+                                    <img src="/public/assets/images/logo.jpg">
+                                </div>
+                                <div class="col-md-10 col-sm-10">
+                                    <p>Ace Recruitment</p>
+                                </div>
+                            </div>
+
+                            ​
+                            <div class="form_div">
+                                <form id="loginForm">
+                                    <div class="input-group input-group col-md-6 col-lg-12 email_field">
+                                        <span class="input-group-addon">
+											<i class="fa fa-envelope-o icon"></i>
+										</span>
+                                        <input id="email" type="email" class="form-control" name="email" placeholder="Email Address">
+                                    </div>
+                                    ​
+                                    <div class="input-group input-group col-md-6 col-lg-12 has-feedback">
+                                        <span class="input-group-addon">
+											<i class="fa fa-lock"
+												aria-hidden="true"></i>
+										</span>
+                                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                        <!--<span class="glyphicon glyphicon-ok form-control-feedback"></span>-->
+                                        <span class="form-control-feedback"><i class="fa fa-key"></i> <i
+												class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                                    </div>
+                                    ​
+                                    <div class="g-recaptcha form-group" data-sitekey="6LdPBfwUAAAAAOsltOTETlqRqBPqzVI4Q-1iQ9O9" data-callback="onSubmit" data-action="submit"></div>
+                                    ​ ​
+                                    <div class="form-group form-group col-md-6 col-lg-12" style="margin-top:
+										1.5rem;">
+                                        <a href="#" style="text-decoration:none;font-weight:600">Forgot
+											password ? </a>
+                                        <button type="submit" class="btn btn-primary" id="my_btn">Login <i class="fa
+												fa-chevron-right" aria-hidden="true"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            ​ ​
+
+            <!-- <script src="/public/assets/js/captcha.js">
+            </script> -->
+            <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            ​
+            <script type="text/javascript" src="/public/assets/js/bundle.js"></script>
+
+        </body>
+
+    </html>
